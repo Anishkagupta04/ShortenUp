@@ -1,4 +1,4 @@
-
+import pyshorteners
 import streamlit as st
 
 st.set_page_config(
@@ -7,13 +7,13 @@ st.set_page_config(
     layout="wide"
 )
 
-# def shorten_url(input_url):
-#     if input_url:
-#         # shortener = pyshorteners.Shortener()
-#         # short_url = shortener.tinyurl.short(input_url)
-#         return short_url
-#     else:
-#         return None
+def shorten_url(input_url):
+    if input_url:
+        # shortener = pyshorteners.Shortener()
+        # short_url = shortener.tinyurl.short(input_url)
+        return short_url
+    else:
+        return None
 
 # Streamlit dashboard
 st.title("ShortenUp")
