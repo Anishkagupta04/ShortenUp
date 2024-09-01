@@ -9,7 +9,7 @@ st.set_page_config(
 
 def shorten_url(input_url):
     if input_url:
-        shortener = pyshorteners.Shortener()
+        # shortener = pyshorteners.Shortener()
         short_url = shortener.tinyurl.short(input_url)
         return short_url
     else:
